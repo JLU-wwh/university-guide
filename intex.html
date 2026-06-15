@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全国高校新生咨询群导航</title>
+    <style>
+        /* 基础网页样式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6; 
+            color: #333;
+            padding: 20px;
+            margin: 0;
+            padding-bottom: 80px; 
+
+            /* ⬇️ 全屏背景公益水印 ⬇️ */
+            /* 现在的文字是：公益导航 · 严禁商用 */
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Ctext x='10' y='120' fill='rgba(0,0,0,0.04)' font-size='14' font-weight='bold' font-family='Arial, sans-serif' transform='rotate(-45 75 75)'%3E公益导航 · 严禁商用%3C/text%3E%3C/svg%3E");
+            background-repeat: repeat;   
+            background-attachment: fixed; 
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative; 
+            z-index: 1;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        p.subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        /* 搜索框样式 */
+        .search-box {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            outline: none;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .search-box:focus {
+            border-color: #3498db;
+        }
+        /* 群卡片样式 */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            background: #fff;
+        }
+        .card-info h3 {
+            margin: 0 0 5px 0;
+            color: #2980b9;
+        }
+        .card-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        /* 按钮样式 */
+        .btn {
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background-color: #2ecc71;
+        }
+        
+        /* ⬇️ 右下角悬浮公益声明专属样式 ⬇️ */
+        .public-welfare-badge {
+            position: fixed; 
+            bottom: 20px;    
+            right: 20px;     
+            background-color: rgba(39, 174, 96, 0.9); /* 改成了代表安全和公益的绿色 */
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px; /* 改成了更正式的方形圆角 */
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            z-index: 9999;           
+            pointer-events: none;    
+            user-select: none;       
+            -webkit-user-select: none;
+            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+            backdrop-filter: blur(4px); 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎓 大学新生咨询群导航</h1>
+    <p class="subtitle">纯公益整理 · 搜索目标院校一键加入答疑群</p>
+<p style="text-align: center; color: #95a5a6; font-size: 12px; margin-top: -20px; margin-bottom: 30px;">* 注：大学排序依据教育部公布高校编码</p>
+
+    <input type="text" id="searchInput" class="search-box" placeholder="输入大学名称进行搜索 (例如：北京大学)...">
+
+    <div id="groupList">
+
+        <div class="card">
+            <div class="card-info">
+                <h3>北京大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/kVeUG4yYEM"class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>中国人民大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/RuMGGfCzuM" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>北京理工大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/hTJvN9r1cs" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>中国农业大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/ZD7MQNguC6" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>北京师范大学/中国人民大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/aXoHlc0vyE" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>中央财经大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/HuPwJLo7eO" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>中国科学技术大学/中国科学院大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/vlTRtKQDKw" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>吉林大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/5J4e0XCQbC" class="btn">一键加群</a>
+        </div>
+    <div class="card">
+            <div class="card-info">
+                <h3>复旦大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/fa3HG1ejoA" target="_blank" class="btn">一键加群</a>
+        </div>
+ <div class="card">
+            <div class="card-info">
+                <h3>上海交通大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/uA4As0b4dy" target="_blank" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>上海科技大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/I6gwqQbb2M" class="btn">一键加群</a>
+        </div>
+
+<div class="card">
+            <div class="card-info">
+                <h3>南京大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/z1NtjG7LkA" class="btn">一键加群</a>
+        </div>
+
+<div class="card">
+            <div class="card-info">
+                <h3>浙江大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/HczoYsTByE" class="btn">一键加群</a>
+        </div>
+
+<div class="card">
+            <div class="card-info">
+                <h3>厦门大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/LXBXSHyVyY" class="btn">一键加群</a>
+        </div>
+
+<div class="card">
+            <div class="card-info">
+                <h3>山东大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/OsmSNOIu4O" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>西南财经大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/NEFB08PICS" class="btn">一键加群</a>
+        </div>
+    
+<div class="card">
+            <div class="card-info">
+                <h3>西安交通大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/6k6Envz5gQ" class="btn">一键加群</a>
+        </div>
+<div class="card">
+            <div class="card-info">
+                <h3>西北工业大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/ehpmNQCd34" class="btn">一键加群</a>
+        </div>
+
+<div class="card">
+            <div class="card-info">
+                <h3>长安大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/eQ6GWcjSP6" class="btn">一键加群</a>
+        </div>
+
+
+<div class="card">
+            <div class="card-info">
+                <h3>兰州大学</h3>
+                           </div>
+            <a href="https://qm.qq.com/q/VYgMkaVtIc" class="btn">一键加群</a>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="public-welfare-badge">
+    🕊️ 本页面为纯公益免费导航。严禁任何形式的商业引流、倒卖或收费加群！
+</div>
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.card');
+
+    searchInput.addEventListener('input', function() {
+        const filterText = this.value.toLowerCase();
+        
+        cards.forEach(card => {
+            const cardText = card.textContent.toLowerCase();
+            if (cardText.includes(filterText)) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
